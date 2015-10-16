@@ -22,5 +22,5 @@ struct node {
 };
 
 int convert_sll_2digit_to_int(struct node *head){
-	
+	return 0;
 }

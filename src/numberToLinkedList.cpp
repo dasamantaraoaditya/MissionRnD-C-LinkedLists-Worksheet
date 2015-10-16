@@ -20,5 +20,5 @@ struct node {
 };
 
 struct node * numberToLinkedList(int N) {
-	
+	return NULL;
 }
