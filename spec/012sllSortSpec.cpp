@@ -6,7 +6,7 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace spec
 {
-	TEST_CLASS(twodigitLinkedListSpec)
+	TEST_CLASS(w012sllSortSpec)
 	{
 	public:
 		struct node * createNode(int n1) {
