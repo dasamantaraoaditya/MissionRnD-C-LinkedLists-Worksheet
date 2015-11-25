@@ -12,12 +12,30 @@ NOTES:
 */
 
 #include <stdio.h>
-
+#include<stdlib.h>
 struct node {
 	int num;
 	struct node *next;
 };
 
+void insert_at_end(struct node *inter);
 struct node * removeEveryKthNode(struct node *head, int K) {
-	return NULL;
+	int counter = 1;
+	struct node *result;
+	result = head;
+	if (K <= 1 || head == NULL)
+		return NULL;
+
+	while (head->next != '\0')
+	{
+		if ((counter + 1) % K == 0)
+		{
+			head->next = head->next->next;
+		}
+		else
+			head = head->next;
+
+		counter++;
+	}
+	return result;
 }
